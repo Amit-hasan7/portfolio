@@ -904,42 +904,6 @@ pre s {
   }
 }
 
-/* theme toggle */
-.theme {
-  margin-left: 8px;
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  display: grid;
-  place-items: center;
-  cursor: pointer;
-  color: var(--fg);
-  background: rgba(var(--tint), 0.07);
-  border: 1px solid rgba(var(--tint), 0.14);
-  transition: 0.25s;
-}
-.theme:hover {
-  background: rgba(var(--tint), 0.14);
-  transform: rotate(18deg);
-}
-.theme svg {
-  width: 18px;
-  height: 18px;
-  fill: none;
-  stroke: currentColor;
-  stroke-width: 1.8;
-  stroke-linecap: round;
-  stroke-linejoin: round;
-}
-.theme .moon {
-  display: none;
-}
-[data-theme="light"] .theme .sun {
-  display: none;
-}
-[data-theme="light"] .theme .moon {
-  display: block;
-}
 
 /* light mode */
 [data-theme="light"] .o1 {
@@ -990,9 +954,6 @@ pre s {
   box-shadow: 0 8px 24px -10px rgba(0, 0, 0, 0.45);
 }
 @media (max-width: 820px) {
-  .theme {
-    margin-left: auto;
-  }
   [data-theme="light"] .nav nav {
     background: rgba(255, 255, 255, 0.85);
     border-color: rgba(0, 0, 0, 0.08);
