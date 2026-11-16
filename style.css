@@ -133,6 +133,10 @@ em {
   }
 }
 
+.shot.s3 {
+  background: linear-gradient(135deg, #1e1e2f, #2a2a40); /* আপনার থিম অনুযায়ী কালার বদলে নিন */
+}
+
 /* nav */
 .nav {
   position: fixed;
